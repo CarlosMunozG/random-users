@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+/* --- connection ---*/
+.connection {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connection figure {
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connection figure svg {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.connection figure h4 {
+  color: #a51010;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ---- reset ---- */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  background-color: #f8f6ee;
+}
+
+/* ---- typography ---- */
+body {
+  color: #111;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ---- layout ---- */
+main {
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapper img {
+  width: auto;
+  height: 100%;
+}
+
+.capital-letters {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=style.css.map */

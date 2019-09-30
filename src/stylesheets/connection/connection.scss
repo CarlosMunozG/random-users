@@ -1,0 +1,39 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+@import './../variables/colors.scss';
+@import './../variables/variables.scss';
+
+
+/* --- connection ---*/
+
+.connection{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-light-semitransparent;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  @include flex-center();
+
+  figure{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    svg{
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h4{
+      color: $color-alert;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+}

@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Alfred Smart Systems
+
+This is the project directory for the technical test for Alfred Smart Systems. Here you will find all the steps:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs this app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `Description`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- This apps gives you three random contacts from an API Rest. As a user, you can view different information from every contact, such as:
 
-### `npm run build`
+  - **Name:** First name and last name.
+  - **Email:** Email.
+  - **Calendar:** Date of birthday.
+  - **Pointer:** City where the user lives.
+  - **Phone:** Cell phone.
+  - **Lock:** Username or nickname.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- As a user I can delete one contact from my list of contacts. I can delete all the contacts I want. If I delete all the contacts, It will appear a message telling me there is no contacts. If I delete all my contacts except one, the sort button will be not rendered. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- As a user I want to add one random user from an external API everytime I press the bottom "+". This new contact will be added as the last contact of the list I already have.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- As a user I want to sort all the contacts by the first name in an ascendent way. If I have only one contact o no one, the sort button will be not rendered as this button only works at least with two contacts.
 
-### `npm run eject`
+### `Technical tasks`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **React:** All this app has been made with React. It is also prepared to be scalable and easy maintanable with every archive in its place:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Components: 
+    - ButtonIcon: Button with an SVG icon inside use in so many different places withits own props.
+    - SVGIcon: A list of the different SVG icons you will need in this app and their props to manipulate them.
+    - User Info: When you press an icon from one contact, it displays some kind of info depending on which button you have pressed. This info is control from this component.
+  
+  - Services:
+    - userServices: file which control the methods to get the info from the external API [https://randomuser.me/]
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - Stylesheets: this apps uses SASS to compile every stylesheet it has. 
+    - style.css: General css for every app.
+    - Connections: SCSS related with the message when internet connection is lost.
+    - Variables: 
+      - Colors: 
+      - Variables: 
+    - Views:
+      - example: The css related with this app. All the styles to create this beautiful app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Redux:** To control the different states and their changes, this has been controled with Redux. It has been refactored with a folder "redux" where you can find the actions and the reducers, prepared to be scalable.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Bonus
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Connection state: When internet connection is lost, the user is informed by a warning message on the screen. This is due to "react-detect-offline" package. To show the message disconnect internet from your computer.
 
-### Analyzing the Bundle Size
+- SASS: All the stylesheets have been created with a compiler and variables. They have been separate in different files to be more scalable.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Backlog
 
-### Making a Progressive Web App
+- Testing: During my bootcamp, we learned a litle bit from testing, but not with React, Redux, Axios, mocks and snapshots. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

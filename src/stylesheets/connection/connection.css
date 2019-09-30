@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+/* --- connection ---*/
+.connection {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connection figure {
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connection figure svg {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.connection figure h4 {
+  color: #a51010;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+/*# sourceMappingURL=connection.css.map */
